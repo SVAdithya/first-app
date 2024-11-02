@@ -1,24 +1,12 @@
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <img src="./logo512.png" className="App-logo" alt="logo" />
-      <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function MyComponent() {
+    return <h1>Hello world</h1>;
 }
 
-export default App;
+function MyHello() {
+    return <p>Hi Adithya</p>;
+}
+
+// Use curly braces for named exports
+export { MyComponent, MyHello };
